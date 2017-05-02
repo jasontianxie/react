@@ -65,7 +65,7 @@ module.exports = {
   ],
   devtool: 'source-map',
   devServer: {
-    contentBase: './app/',//devserver的主文件夹
+    contentBase: './app/',
     historyApiFallback: true,//如果使用了html5的history API，那么设置historyApiFallback为true，当你访问的一个页面是404的时候，将不会返回404.而是会返回index.html。这样使交互更加友好。
     hot: true,//打开热替换，HMR，hot module replacement。
     proxy: casProxy(),
